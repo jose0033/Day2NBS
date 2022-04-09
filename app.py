@@ -9,7 +9,8 @@ def index():
         income = request.form.get("income")
         age = request.form.get("age")
         loan = request.form.get("loan")
-        print(income, age,loan)
+
+        print(income,age,loan)
         model1 = joblib.load("CART")
         income = float(income)
         age = float(age)
