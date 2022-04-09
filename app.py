@@ -18,7 +18,7 @@ def index():
         model2= joblib.load("RF")
         pred2 = model2.predict([[income,age,loan]])
         model3= joblib.load("GB")
-        pred3 = model3.predict([[incomem,age,loan]])
+        pred3 = model3.predict([[income,age,loan]])
         return(render_template("index.html", result1=pred1, result2=pred2, result3=pred3))
     else:
         return(render_template("index.html", result1="2", result2="2", result3='2'))
