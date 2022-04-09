@@ -12,7 +12,7 @@ def index():
         print(income, age,loan)
         model1 = joblib.load("CART")
         income = float(income)
-        age = float(suppcard)
+        age = float(age)
         loan = float(loan)
         pred1 = model1.predict([[income,age,loan]])
         model2= joblib.load("RF")
